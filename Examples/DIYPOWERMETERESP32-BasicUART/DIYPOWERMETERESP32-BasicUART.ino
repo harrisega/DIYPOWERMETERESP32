@@ -31,87 +31,38 @@ void loop()
     {
       Serial.println("SUCCESS");
       float voltage = PowerMeter.voltage();
-      if (!isnan(voltage))
-      {
-        Serial.print("Voltage: ");
-        Serial.print(voltage);
-        Serial.println(" V");
-      }
-      else
-      {
-        Serial.println("Error reading Voltage");
-      }
+      Serial.print("Voltage: ");
+      Serial.print(voltage);
+      Serial.println(" V");
 
       float current = PowerMeter.current();
-      if (!isnan(current))
-      {
-        Serial.print("Current: ");
-        Serial.print(current);
-        Serial.println(" A");
-      }
-      else
-      {
-        Serial.println("Error reading Current");
-      }
+      Serial.print("Current: ");
+      Serial.print(current);
+      Serial.println(" A");
 
       float power = PowerMeter.power();
-      if (!isnan(power))
-      {
-        Serial.print("Power: ");
-        Serial.print(power);
-        Serial.println(" W");
-      }
-      else
-      {
-        Serial.println("Error reading Power");
-      }
+      Serial.print("Power: ");
+      Serial.print(power);
+      Serial.println(" W");
 
       float energy = PowerMeter.energy();
-      if (!isnan(energy))
-      {
-        Serial.print("Energy: ");
-        Serial.print(energy);
-        Serial.println(" kWh");
-      }
-      else
-      {
-        Serial.println("Error reading Energy");
-      }
+      Serial.print("Energy: ");
+      Serial.print(energy);
+      Serial.println(" kWh");
 
       float frequency = PowerMeter.frequency();
-      if (!isnan(frequency))
-      {
-        Serial.print("Frequency: ");
-        Serial.print(frequency);
-        Serial.println(" Hz");
-      }
-      else
-      {
-        Serial.println("Error reading Frequency");
-      }
+      Serial.print("Frequency: ");
+      Serial.print(frequency);
+      Serial.println(" Hz");
 
       float pf = PowerMeter.pf();
-      if (!isnan(pf))
-      {
-        Serial.print("PF: ");
-        Serial.println(pf);
-      }
-      else
-      {
-        Serial.println("Error reading PF");
-      }
+      Serial.print("PF: ");
+      Serial.println(pf);
 
       float temperature = PowerMeter.temperature();
-      if (!isnan(temperature))
-      {
-        Serial.print("Temperature: ");
-        Serial.print(temperature);
-        Serial.println("°C");
-      }
-      else
-      {
-        Serial.println("Error reading Temperature");
-      }
+      Serial.print("Temperature: ");
+      Serial.print(temperature);
+      Serial.println("°C");
     }
     else
     {
