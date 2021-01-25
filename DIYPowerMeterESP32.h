@@ -119,7 +119,7 @@ public:
     float frequency();
     float pf();
     float co2();
-    float temperature();
+    float coreTemperature();
 
     uint8_t getAddress();
     uint8_t getCommSettings();
@@ -150,7 +150,7 @@ private:
         float frequency;
         float pf;
         float co2;
-        float temperature;
+        float coreTemperature;
     } _currentValues; // Measured Values
 
     uint64_t _lastRead; // Last time values were updated

@@ -190,15 +190,15 @@ float DIYPOWERMETERESP32::co2()
 }
 
 /*!
- * DIYPOWERMETERESP32::temperature
+ * DIYPOWERMETERESP32::coreTemperature
  *
- * Get current temperature
+ * Get current power meter module core temperature
  *
- * @return current temperature in deg Celcius
+ * @return current module core temperature in deg Celcius
 */
-float DIYPOWERMETERESP32::temperature()
+float DIYPOWERMETERESP32::coreTemperature()
 {
-    return _currentValues.temperature;
+    return _currentValues.coreTemperature;
 }
 
 /*!
@@ -405,11 +405,11 @@ bool DIYPOWERMETERESP32::updateValues()
                           (uint32_t)response[26]) /
                          10000.0;
 
-    _currentValues.temperature = ((uint32_t)response[27] << 24 | // Raw voltage in 0.1V
-                                  (uint32_t)response[28] << 16 |
-                                  (uint32_t)response[29] << 8 |
-                                  (uint32_t)response[30]) /
-                                 100.0;
+    _currentValues.coreTemperature = ((uint32_t)response[27] << 24 | // Raw voltage in 0.1V
+                                      (uint32_t)response[28] << 16 |
+                                      (uint32_t)response[29] << 8 |
+                                      (uint32_t)response[30]) /
+                                     100.0;
 
     _currentValues.frequency = ((uint32_t)response[31] << 24 | // Raw voltage in 0.1V
                                 (uint32_t)response[32] << 16 |

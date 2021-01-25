@@ -15,7 +15,7 @@ energy  KEYWORD2
 frequency   KEYWORD2
 pf  KEYWORD2
 co2 KEYWORD2
-temperature KEYWORD2
+coreTemperature KEYWORD2
 getAddress  KEYWORD2
 getCommSettings KEYWORD2
 setConfig   KEYWORD2

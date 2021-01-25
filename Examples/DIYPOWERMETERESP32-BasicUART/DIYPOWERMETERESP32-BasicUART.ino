@@ -60,7 +60,7 @@ void loop()
       Serial.println(pf);
 
       float temperature = PowerMeter.temperature();
-      Serial.print("Temperature: ");
+      Serial.print("Core Temperature: ");
       Serial.print(temperature);
       Serial.println("°C");
     }
