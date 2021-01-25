@@ -1,0 +1,18 @@
+{
+    "name": "DIYPOWERMETERESP32",
+    "frameworks": "arduino",
+    "keywords": "DIY, ESP32, powermeter",
+    "description": "Library for DIY Power Meter ESP32 Board by Axial Labs",
+    "url": "https://github.com/harrisega/DIYPOWERMETERESP32",
+    "authors": [
+        {
+            "name": "Harris Ega"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/harrisega/DIYPOWERMETERESP32"
+    },
+    "platforms": "*",
+    "version": "1.0.0",
+}

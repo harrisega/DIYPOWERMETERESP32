@@ -1,0 +1,33 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+DIYPOWERMETERESP32 KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+voltage	KEYWORD2
+current	KEYWORD2
+power	KEYWORD2
+energy	KEYWORD2
+frequency KEYWORD2
+pf KEYWORD2
+co2 KEYWORD2
+temperature KEYWORD2
+getAddress KEYWORD2
+getCommSettings	KEYWORD2
+setConfig KEYWORD2
+getConfig KEYWORD2
+checkConfig KEYWORD2
+resetEnergy KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+POWERMETER_SERIAL_INTERFACE LITERAL1
+POWERMETER_DEFAULT_ADDRESS LITERAL1
+POWERMETER_DEFAULT_FRAME_FORMAT LITERAL1
+POWERMETER_DEFAULT_BAUDRATE LITERAL1
+
