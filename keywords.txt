@@ -22,6 +22,10 @@ setConfig KEYWORD2
 getConfig KEYWORD2
 checkConfig KEYWORD2
 resetEnergy KEYWORD2
+setLED KEYWORD2
+setRelay KEYWORD2
+setBuzzer KEYWORD2
+getButton KEYWORD2
 
 #######################################
 # Constants (LITERAL1)

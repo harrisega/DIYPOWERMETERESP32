@@ -1,4 +1,3 @@
-#include <Arduino.h>
 #include "DIYPowerMeterESP32.h"
 
 DIYPOWERMETERESP32 PowerMeter(POWERMETER_SERIAL_INTERFACE);
